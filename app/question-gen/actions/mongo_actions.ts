@@ -9,6 +9,7 @@ import { generatePromptfor_InformationSystems } from "./prompts/gen/is";
 import { CommonInstruction } from "./prompts/common";
 import { generatePromptfor_programming } from "./prompts/gen/c";
 import { generatePromptfor_ComputerNetworks } from "./prompts/gen/net";
+import { generatePromptfor_AncientHistory } from "./prompts/gen/ah";
 
 // Generate question function
 export async function generateQuestion(categoryId: string , num: number): Promise<{ content: string; model: string ; keyIndex: number }> {
@@ -21,8 +22,11 @@ export async function generateQuestion(categoryId: string , num: number): Promis
 
   let thePrompt = "";
   switch (dataset.category) {
-    case "Ancient History":
+    case "Information Systems":
       thePrompt = generatePromptfor_InformationSystems(dataset, {QuestionPattern:QuestionPattern,CommonInstruction: CommonInstruction} , num+1) || "";
+      break;
+    case "Ancient History":
+      thePrompt = generatePromptfor_AncientHistory(dataset, {QuestionPattern:QuestionPattern,CommonInstruction: CommonInstruction} , num+1) || "";
       break;
     case "Programming":
       thePrompt = generatePromptfor_programming(dataset, contentPreview, QuestionPattern, CommonInstruction , num);
