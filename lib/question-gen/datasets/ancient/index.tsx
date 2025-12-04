@@ -10,9 +10,9 @@ import { ancientHistoryDataset } from "../ancient-history"
 //   ]
 // }
 export const Ancient: TopicGroup = {
-    id: "Network",
-    name: "Networking",
-    description: "Fundamentals of computer networking: OSI & TCP/IP models, IP/MAC addressing, switching, routing, common protocols (TCP, UDP, HTTP), network topologies, and basic troubleshooting.",
+    id: "ancient",
+    name: "Ancient History",
+    description: "Overview of major ancient civilizations including Egypt, Mesopotamia, Greece, Rome, China, India, and Persia with their key achievements, events, and historical figures.",
     subtopics: [
         ancientHistoryDataset,
     ],
