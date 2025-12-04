@@ -21,7 +21,7 @@ export async function generateQuestion(categoryId: string , num: number): Promis
 
   let thePrompt = "";
   switch (dataset.category) {
-    case "Information Systems":
+    case "Ancient History":
       thePrompt = generatePromptfor_InformationSystems(dataset, {QuestionPattern:QuestionPattern,CommonInstruction: CommonInstruction} , num+1) || "";
       break;
     case "Programming":

@@ -5,7 +5,7 @@ import { Dataset } from "@/lib/question-gen/types/dataset";
 export const ancientHistoryLesson01Dataset: Dataset = {
   id: "ancient-history-01",
   topicCount: 15,
-  category: "Information Systems",
+  category: "Ancient History",
   subcategory: "Ancient Civilizations & Major Events",
   description: "Overview of major ancient civilizations including Egypt, Mesopotamia, Greece, Rome, China, India, and Persia with their key achievements, events, and historical figures.",
   topics: [
