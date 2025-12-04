@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Learning Hub",
+  title: "Q-Gen testing",
   description: "A hub for all your learning resources",
 };
 
