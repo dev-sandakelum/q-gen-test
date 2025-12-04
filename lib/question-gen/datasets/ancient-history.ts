@@ -3,6 +3,7 @@ import { Dataset } from "../types/dataset"
 export const ancientHistoryDataset: Dataset = {
   id: "ancient-history",
   category: "Ancient History",
+  subcategory: "Information Systems",
   description: "Learn about ancient civilizations",
   content: `[PASTE YOUR ENTIRE PDF CONTENT HERE AS TEXT]
   
