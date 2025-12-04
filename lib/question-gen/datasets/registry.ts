@@ -1,10 +1,12 @@
 import { TopicGroup, Dataset } from "../types/dataset"
+import { Ancient } from "./ancient"
 import { Networking } from "./networking"
 import { PredefinedGroup } from "./predefined"
 
 // All topic groups
 export const topicGroups: TopicGroup[] = [
   Networking,
+  Ancient,
   PredefinedGroup
 ]
 // Flatten all datasets for backward compatibility
